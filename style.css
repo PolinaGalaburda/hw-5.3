@@ -1,0 +1,287 @@
+@font-face {
+   font-family: "Basis Grotesque Pro";
+   src: url("fonts/BasisGrotesquePro-Regular.woff2") format("woff2"),
+      url("fonts/BasisGrotesquePro-Regular.woff") format("woff"),
+      url("fonts/BasisGrotesquePro-Regular.ttf") format("ttf"),
+      url("fonts/BasisGrotesquePro-Regular.eot") format("eot");
+}
+
+@font-face {
+   font-family: "Basis Grotesque Pro";
+   src: url("fonts/BasisGrotesquePro-Light.woff2") format("woff2"),
+      url("fonts/BasisGrotesquePro-Light.woff") format("woff"),
+      url("fonts/BasisGrotesquePro-Light.ttf") format("ttf"),
+      url("fonts/BasisGrotesquePro-Light.eot") format("eot");
+   font-weight: 300;
+}
+
+@font-face {
+   font-family: "Basis Grotesque Pro";
+   src: url("fonts/BasisGrotesquePro-Bold.woff2") format("woff2"),
+      url("fonts/BasisGrotesquePro-Bold.woff") format("woff"),
+      url("fonts/BasisGrotesquePro-Bold.ttf") format("ttf"),
+      url("fonts/BasisGrotesquePro-Bold.eot") format("eot");
+   font-weight: 700;
+}
+
+body {
+   min-width: 425px;
+   box-sizing: border-box;
+}
+
+.investment {
+   display: flex;
+   flex-direction: column;
+   padding-top: 10%;
+   padding-left: 14%;
+}
+
+@media (max-width:768px) {
+   .investment {
+      padding-top: 7%;
+      padding-left: 5%;
+      padding-right: 5%;
+   }
+}
+
+.theme {
+   font-family: "Basis Grotesque Pro";
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: -0.03em;
+   text-transform: uppercase;
+   color: #0536FC;
+   opacity: 0.9;
+}
+
+.title {
+   font-family: 'Basis Grotesque Pro';
+   font-weight: 700;
+   font-size: 38px;
+   line-height: 42px;
+   letter-spacing: -0.03em;
+   text-transform: uppercase;
+   color: #000000;
+}
+
+@media (max-width:701px) {
+   .title {
+      font-size: 30px;
+   }
+}
+
+.way-to-pay {
+   padding-right: 13.5%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+@media (max-width:901px) {
+   .way-to-pay {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-right: 0;
+   }
+}
+
+.way-to-pay__selection {
+   min-width: 205px;
+   font-family: 'Basis Grotesque Pro';
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: -0.03em;
+   text-transform: uppercase;
+   color: #000000;
+}
+
+.way-to-pay__radio {
+   min-width: 540px;
+   display: flex;
+   justify-content: space-between;
+}
+
+@media (max-width:701px) {
+   .way-to-pay__radio {
+      flex-direction: column;
+      min-width: 100%;
+   }
+}
+
+.way-to-pay__input {
+   padding-left: 20px;
+}
+
+.way-to-pay__label {
+   font-family: 'Basis Grotesque Pro';
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: -0.03em;
+   color: #000000;
+   opacity: 0.6;
+}
+
+.card-container {
+   float: right;
+   padding-right: 5.76%;
+}
+
+@media (max-width:901px) {
+   .card-container {
+      float: none;
+      padding-left: 0;
+   }
+}
+
+.bank-card__item {
+   font-family: 'Basis Grotesque Pro';
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: -0.03em;
+   text-transform: uppercase;
+   color: #000000;
+   opacity: 0.85;
+}
+
+.bank-card__row_25pct {
+   display: flex;
+   width: 635px;
+}
+
+@media (max-width:701px) {
+   .bank-card__row_25pct {
+      width: 100%;
+   }
+}
+
+.bank-card__block {
+   display: flex;
+   border: 1px solid rgba(0, 0, 0, 0.15);
+   width: 25%;
+   height: 50px;
+   justify-content: center;
+}
+
+.bank-card__block:hover {
+   background-color: #0536FC;
+}
+
+.bank-card__block:hover .bank-card__label {
+   color: white;
+}
+
+.bank-card__input {
+   border: 1px solid rgba(0, 0, 0, 0.15);
+   font-family: 'Basis Grotesque Pro';
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: -0.03em;
+}
+
+.bank-card__input_hidden {
+   display: none;
+}
+
+.bank-card__input_long {
+   box-sizing: border-box;
+   height: 50px;
+   width: 635px;
+   border: 1px solid rgba(0, 0, 0, 0.15);
+   border-top: none;
+   padding: 13px 0px 13px 35px;
+
+}
+
+@media (max-width:701px) {
+   .bank-card__input_long {
+      width: 100%;
+   }
+}
+
+.bank-card__label {
+   font-family: 'Basis Grotesque Pro';
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: -0.03em;
+   text-transform: uppercase;
+   color: #000000;
+   padding-top: 13px;
+}
+
+.repetition {
+   padding-bottom: 50px;
+   padding-top: 20px;
+}
+
+.repetition__label {
+   font-family: 'Basis Grotesque Pro';
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: -0.03em;
+   color: #000000;
+   opacity: 0.6;
+}
+
+.email__label {
+   font-family: 'Basis Grotesque Pro';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: -0.03em;
+   text-transform: uppercase;
+   color: #000000;
+}
+
+.email__input {
+   min-width: 478px;
+   border: none;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+   font-family: 'Basis Grotesque Pro';
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: -0.03em;
+   color: #000000;
+}
+
+@media (max-width:583px) {
+   .email__input {
+      min-width: 100%;
+   }
+}
+
+.checkbox {
+   padding-bottom: 48px;
+}
+
+.checkbox__label {
+   font-family: 'Basis Grotesque Pro';
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: -0.03em;
+   color: #000000;
+   opacity: 0.6;
+}
+
+
+.checkbox__link {
+   color: #0536FC;
+   text-decoration: none;
+}
+
+.investment-button {
+   border: none;
+   padding: 16px 60px;
+   background: #0536FC;
+   font-family: 'Basis Grotesque Pro';
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: -0.03em;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
